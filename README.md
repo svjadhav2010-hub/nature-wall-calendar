@@ -2,7 +2,7 @@
 
 A premium, interactive wall calendar component built with React and Next.js. Designed to bridge the gap between physical aesthetics and digital utility, this calendar features dynamic "Nature Collection" themes, intuitive range selection, and tactile micro-interactions.
 
-![Calendar Theme: Cedar Grove](https://via.placeholder.com/800x400.png?text=Nature+Series+Wall+Calendar) *(You can replace this link with an actual screenshot later!)*
+![Calendar Theme: Cedar Grove](https://via.placeholder.com/800x400.png?text=Nature+Series+Wall+Calendar) 
 
 ## ✨ Key Features
 
@@ -39,7 +39,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### 1. Clone the repository
 If you haven't already, clone the project to your local machine:
 ```bash
-git clone [https://github.com/your-username/nature-wall-calendar.git](https://github.com/your-username/nature-wall-calendar.git)
+git clone https://github.com/svjadhav2010-hub/nature-wall-calendar.git
 cd nature-wall-calendar
 ````
 
@@ -75,8 +75,4 @@ Open your browser and navigate to:
 
 Feel free to open issues or submit pull requests if you want to add new themes, animations, or features\!
 
-```
-
-### Next Steps
-If you want to update the placeholder image link at the top of the README later, you can take a screenshot of your beautiful calendar, drop it into your repository, and update the markdown link to point to it!
 ```
