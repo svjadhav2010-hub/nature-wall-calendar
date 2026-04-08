@@ -180,17 +180,19 @@ export default function PremiumWallCalendar() {
             <div className="md:col-span-8 p-6 lg:p-10 border-r border-gray-100 relative">
               
               {/* Header & Quick Month Selector */}
-              <div className="flex justify-between items-center mb-8 relative z-20">
-                <button 
-                  onClick={() => setShowMonthSelector(!showMonthSelector)}
-                  className="group flex items-center gap-2 hover:bg-gray-50 px-3 py-1 rounded-lg transition-colors -ml-3"
-                >
-                  <h2 className="text-4xl font-serif text-slate-800">
-                    {MONTHS[month]} <em className={`not-italic opacity-70 ${theme.textActive}`}>{year}</em>
-                  </h2>
-                </button>
+                <div className="flex flex-wrap gap-y-4 justify-between items-center mb-8 relative z-20">
+                  <button 
+                    onClick={() => setShowMonthSelector(!showMonthSelector)}
+                    className="group flex items-center gap-2 hover:bg-gray-50 px-2 md:px-3 py-1 rounded-lg transition-colors -ml-2 md:-ml-3"
+                  >
+                    {/* Responsive text: 2xl on mobile, 3xl on small tablets, 4xl on desktop */}
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-slate-800 text-left">
+                      {MONTHS[month]} <em className={`not-italic opacity-70 ${theme.textActive}`}>{year}</em>
+                    </h2>
+                  </button>
 
-                <div className="flex gap-1 bg-gray-50 p-1 rounded-lg border border-gray-100">
+                {/* Added shrink-0 so the buttons never get squished */}
+                <div className="flex shrink-0 gap-1 bg-gray-50 p-1 rounded-lg border border-gray-100">
                   <button onClick={() => handleNavigate(-1)} title="Previous Month (Left Arrow)" className="p-2 hover:bg-white rounded shadow-sm"><ChevronLeft size={18}/></button>
                   <button onClick={() => { setViewDate(new Date()); setShowMonthSelector(false); }} className="px-4 text-xs font-bold uppercase tracking-wider hover:bg-white rounded shadow-sm">Today</button>
                   <button onClick={() => handleNavigate(1)} title="Next Month (Right Arrow)" className="p-2 hover:bg-white rounded shadow-sm"><ChevronRight size={18}/></button>
